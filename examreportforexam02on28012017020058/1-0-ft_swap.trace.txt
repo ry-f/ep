@@ -1,0 +1,93 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p16.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jan 27 18:39:07 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170128/rfleming
+
+= Git history ==================================================================
+$> git -C /var/folders/l7/wlqhnjt976qcl84fwxt059qw0000gp/T/tmpoJHPvo/user log --pretty='%H - %an, %ad : %s'
+f666fbe3aac7c832425afe0644a0f9f36ba28a19 - Exam 42, Fri Jan 27 18:38:38 2017 -0800 : my lucky day
+f1c9acda6362ca629a4fd95c57041b3dcc61dd69 - Exam 42, Fri Jan 27 18:33:43 2017 -0800 : a little ugly but working fine
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/l7/wlqhnjt976qcl84fwxt059qw0000gp/T/tmpoJHPvo/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  487 Jan 27 18:39 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 27 18:39 aff_a
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 27 18:39 ft_swap
+
+/var/folders/l7/wlqhnjt976qcl84fwxt059qw0000gp/T/tmpoJHPvo/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1291 Jan 27 18:39 aff_a.c
+
+/var/folders/l7/wlqhnjt976qcl84fwxt059qw0000gp/T/tmpoJHPvo/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  969 Jan 27 18:39 ft_swap.c
+ 
+= ft_swap ======================================================================
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./6xuzmazj9u8ei18o7dfflvxj "1111828209" "-1062849428"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./xzx468o068jo6k3d16lajir3 "1675592606" "75312505"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./fy10qbuxpv5oo4uut4xtsf4t "1692086781" "-17893924"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./m8yv2mnfwxkf4mdv1kvo2wdc "1387504301" "379615877"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./lhsy2uigpb74an1afe44xdnx "706887310" "580560625"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./3c6h6ht0d9y1vm5aln4w4d53 "583761479" "388840735"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ohmn67hs3nx1yo1pydu8w8av "817320581" "1648887212"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./o0817866j8dv7vgi1oqmgwq7 "830260943" "1175616077"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./unp2c4549ahq0se5kazao61q "-1576589317" "-100203875"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

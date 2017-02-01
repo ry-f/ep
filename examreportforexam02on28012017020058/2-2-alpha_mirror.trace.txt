@@ -1,0 +1,90 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r4p25.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jan 27 21:56:26 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170128/rfleming
+
+= Git history ==================================================================
+$> git -C /var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user log --pretty='%H - %an, %ad : %s'
+18b60b61272a8e31679cab98b78b3c358dfa1294 - Exam 42, Fri Jan 27 21:56:12 2017 -0800 : nope
+a01faf94ee3876bb4734b3b37ea5744952657f23 - Exam 42, Fri Jan 27 21:47:22 2017 -0800 : i can't get this third string array working on either union or inter
+7b9c4745491154ead1f449f80abbd9b67075230e - Exam 42, Fri Jan 27 21:33:39 2017 -0800 : not happening
+f666fbe3aac7c832425afe0644a0f9f36ba28a19 - Exam 42, Fri Jan 27 18:38:38 2017 -0800 : my lucky day
+f1c9acda6362ca629a4fd95c57041b3dcc61dd69 - Exam 42, Fri Jan 27 18:33:43 2017 -0800 : a little ugly but working fine
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1297 Jan 27 21:56 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 21:56 aff_a
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 21:56 alpha_mirror
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 21:56 ft_swap
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 21:56 inter
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 27 21:56 union
+
+/var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1291 Jan 27 21:56 aff_a.c
+
+/var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user/alpha_mirror:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1146 Jan 27 21:56 alpha_mirror.c
+
+/var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  969 Jan 27 21:56 ft_swap.c
+
+/var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1467 Jan 27 21:56 inter.c
+
+/var/folders/lv/8vj2kvqd6w3ctgkxw93154c80000gp/T/tmp07W7IW/user/union:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1702 Jan 27 21:56 union.c
+ 
+= alpha_mirror =================================================================
+$> gcc -Wextra -Wall -Werror alpha_mirror.c -o user_exe 
+alpha_mirror.c:28:22: error: use of undeclared identifier 'a'
+                if ((argv[1][i] >= a && argv[1][i] <= m) || (argv[1][i] >= A && <= M))
+                                   ^
+alpha_mirror.c:28:41: error: use of undeclared identifier 'm'
+                if ((argv[1][i] >= a && argv[1][i] <= m) || (argv[1][i] >= A && <= M))
+                                                      ^
+alpha_mirror.c:28:62: error: use of undeclared identifier 'A'
+                if ((argv[1][i] >= a && argv[1][i] <= m) || (argv[1][i] >= A && <= M))
+                                                                           ^
+alpha_mirror.c:28:67: error: expected expression
+                if ((argv[1][i] >= a && argv[1][i] <= m) || (argv[1][i] >= A && <= M))
+                                                                                ^
+alpha_mirror.c:28:70: error: use of undeclared identifier 'M'
+                if ((argv[1][i] >= a && argv[1][i] <= m) || (argv[1][i] >= A && <= M))
+                                                                                   ^
+alpha_mirror.c:29:4: error: expected expression
+                        
+                        ^
+alpha_mirror.c:29:4: error: expected '}'
+alpha_mirror.c:16:1: note: to match this '{'
+{
+^
+7 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,45 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r7p34.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jan 13 20:39:56 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20170114/rfleming
+
+= Git history ==================================================================
+$> git -C /var/folders/07/18tb_m193t16_lr7jc_gpw9h0000gp/T/tmphYMQ0z/user log --pretty='%H - %an, %ad : %s'
+04d4490cb683aad59de6e1dc00e08aa20c7c4a2d - Exam 42, Fri Jan 13 20:39:20 2017 -0800 : i can't get past the errors on the second term of the arguments to  write(). c'est la vie.
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/07/18tb_m193t16_lr7jc_gpw9h0000gp/T/tmphYMQ0z/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  298 Jan 13 20:39 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 13 20:39 subjects
+
+/var/folders/07/18tb_m193t16_lr7jc_gpw9h0000gp/T/tmphYMQ0z/user/subjects:
+total 0
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 13 20:39 only_z
+
+/var/folders/07/18tb_m193t16_lr7jc_gpw9h0000gp/T/tmphYMQ0z/user/subjects/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  92 Jan 13 20:39 only_z.c
+ 
+= only_z =======================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

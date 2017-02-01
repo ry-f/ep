@@ -1,0 +1,63 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p34.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jan 27 21:33:53 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170128/rfleming
+
+= Git history ==================================================================
+$> git -C /var/folders/yy/6q6gy7n94tz8qrznnz4lznjh0000gp/T/tmpbFowko/user log --pretty='%H - %an, %ad : %s'
+7b9c4745491154ead1f449f80abbd9b67075230e - Exam 42, Fri Jan 27 21:33:39 2017 -0800 : not happening
+f666fbe3aac7c832425afe0644a0f9f36ba28a19 - Exam 42, Fri Jan 27 18:38:38 2017 -0800 : my lucky day
+f1c9acda6362ca629a4fd95c57041b3dcc61dd69 - Exam 42, Fri Jan 27 18:33:43 2017 -0800 : a little ugly but working fine
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/yy/6q6gy7n94tz8qrznnz4lznjh0000gp/T/tmpbFowko/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  747 Jan 27 21:33 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 27 21:33 aff_a
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 27 21:33 ft_swap
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 27 21:33 union
+
+/var/folders/yy/6q6gy7n94tz8qrznnz4lznjh0000gp/T/tmpbFowko/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1291 Jan 27 21:33 aff_a.c
+
+/var/folders/yy/6q6gy7n94tz8qrznnz4lznjh0000gp/T/tmpbFowko/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  969 Jan 27 21:33 ft_swap.c
+
+/var/folders/yy/6q6gy7n94tz8qrznnz4lznjh0000gp/T/tmpbFowko/user/union:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1702 Jan 27 21:33 union.c
+ 
+= union ========================================================================
+$> gcc -Wextra -Wall -Werror union.c -o user_exe 
+union.c:66:2: error: indirection requires pointer operand ('int' invalid)
+        *i = 1;
+        ^~
+union.c:70:12: error: expected ';' after expression
+                c = s2[i]
+                         ^
+                         ;
+2 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,50 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r7p19.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Jan 17 11:09:43 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-beginner/exam_20170117/mgould
+
+= Git history ==================================================================
+$> git -C /var/folders/sq/rw4y7b7j1qv8lp63z84rdw1h0000gp/T/tmpaa4pWk/user log --pretty='%H - %an, %ad : %s'
+3cb87c654dcc022f6b6fcfaf3001b3b033d20002 - Exam 42, Tue Jan 17 11:08:26 2017 -0800 : first attempt at brainfuck, can not figure out how to handle the inner while loops
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sq/rw4y7b7j1qv8lp63z84rdw1h0000gp/T/tmpaa4pWk/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  328 Jan 17 11:09 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 17 11:09 brainfuck
+
+/var/folders/sq/rw4y7b7j1qv8lp63z84rdw1h0000gp/T/tmpaa4pWk/user/brainfuck:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1103 Jan 17 11:09 brainfuck.c
+ 
+= brainfuck ====================================================================
+$> gcc -Wextra -Wall -Werror brainfuck.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./rbgig13otupv7jk1rumzsq8v "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./wt7jzoy2icqu3bxdudp40zfs "+++++[>++sefs++[>++sef+dht+>+++++sfsfefijdgj<<-]>>>++efn<<<<-]>>esf-----sf---.>+++++.>."
+Command './wt7jzoy2icqu3bxdudp40zfs "+++++[>++sefs++[>++sef+dht+>+++++sfsfefijdgj<<-]>>>++efn<<<<-]>>esf-----sf---.>+++++.>."' got killed by a Segmentation fault (Signal -11)
+Grade: 0
+
+= Final grade: 0 ===============================================================
